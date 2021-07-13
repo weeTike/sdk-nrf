@@ -25,13 +25,12 @@ Glossary
       An implementation example that includes a variety of libraries to implement a specific use case.
       It is possible to create a programmable image from it, as it includes a ``main()`` entry point.
 
-   Attribute Protocol (ATT)
-      “The attribute protocol allows a device referred to as the server to expose a set of attributes and
-      their associated values to a peer device referred to as the client.” `Bluetooth Core Specification`_,
-      Version 5.2, Vol 3, Part F, Section 1.1
-
    Application Programming Interface (API)
       A language and message format used by an application program to communicate with an operating system, application, or other services.
+
+   Attribute Protocol (ATT)
+      "[It] allows a device referred to as the server to expose a set of attributes and their associated values to a peer device referred to as the client."
+      `Bluetooth Core Specification`_, Version 5.2, Vol 3, Part F, Section 1.1.
 
    Bluetooth LE Controller layer
       A layer of the Bluetooth LE protocol stack that implements the Link Layer (LL).
@@ -76,8 +75,7 @@ Glossary
       A change to the codebase sent to a remote repository for inclusion.
 
    Cortex Microcontroller Software Interface Standard (CMSIS)
-      A vendor-independent hardware abstraction layer for the Cortex-M processor series that defines
-      generic tool interfaces.
+      A vendor-independent hardware abstraction layer for the Cortex-M processor series that defines generic tool interfaces.
 
    Development Kit (DK)
       A hardware development platform used for application development.
@@ -142,12 +140,14 @@ Glossary
       Each GPIOTE channel can be assigned to one pin.
 
    Generic Access Profile (GAP)
-      “The Bluetooth system defines a base profile which all Bluetooth devices implement. This profile
-      is the Generic Access Profile (GAP), which defines the basic requirements of a Bluetooth device.”
-      `Bluetooth Core Specification`_, Version 5.2, Vol 1, Part A, Section 6.2
+      A base profile that all Bluetooth devices implement.
+      It defines the basic requirements of a Bluetooth device.
+      See `Bluetooth Core Specification`_, Version 5.2, Vol 1, Part A, Section 6.2.
 
    Generic Attribute Protocol (GATT)
-      "Generic Attribute Profile (GATT) is built on top of the Attribute Protocol (ATT) and establishes common operations and a framework for the data transported and stored by the Attribute Protocol.” `Bluetooth Core Specification`_, Version 5.1, Vol 1, Part A, Section 6.4
+      It is built on top of the Attribute Protocol (ATT).
+      "[It] establishes common operations and a framework for the data transported and stored by the Attribute Protocol."
+      `Bluetooth Core Specification`_, Version 5.1, Vol 1, Part A, Section 6.4.
 
    Global Navigation Satellite System (GNSS)
       A satellite navigation system with global coverage.
@@ -214,13 +214,14 @@ Glossary
       However, they can be overridden by applying an additional Kconfig fragment at build time.
 
    Link Layer (LL)
-      “A control protocol for the link and physical layers that is carried over logical links in addition to user data.” `Bluetooth Core Specification`_, Version 5.1, Vol 1, Part A, Section 1.2
+      "A control protocol for the link and physical layers that is carried over logical links in addition to user data."
+      `Bluetooth Core Specification`_, Version 5.1, Vol 1, Part A, Section 1.2.
       It is implemented in the Bluetooth LE Controller layer.
 
    Logical Link Control and Adaptation Protocol (L2CAP)
-      “Provides a channel-based abstraction to applications and services. It carries out segmentation and
-      reassembly of application data and multiplexing and de-multiplexing of multiple channels over a
-      shared logical link.” `Bluetooth Core Specification`_, Version 5.2, Vol 1, Part A, Section 1.2
+      "[It] provides a channel-based abstraction to applications and services.
+      It carries out segmentation and reassembly of application data and multiplexing and de-multiplexing of multiple channels over a shared logical link."
+      `Bluetooth Core Specification`_, Version 5.2, Vol 1, Part A, Section 1.2.
 
    Low Latency Packet Mode (LLPM)
       A mode that allows shorter connection intervals than specified in the `Bluetooth Core Specification`_.
@@ -237,8 +238,8 @@ Glossary
       It defines the service architecture for IoT devices and the protocol for device management.
 
    Main Stack Pointer (MSP)
-      The default stack pointer. By default, the nRF52 has a shared call stack for the application and the
-      SoftDevice, managed by the MSP.
+      The default stack pointer.
+      By default, the nRF52 has a shared call stack for the application and the SoftDevice, managed by the MSP.
 
    Man-in-the-Middle (MITM)
       A man-in-the-middle attack is a form of eavesdropping where communication between two devices is monitored and modified by an unauthorized party who relays information between the two devices giving the illusion that they are directly connected.
@@ -254,7 +255,7 @@ Glossary
 
    Mcumgr
       A management library for 32-bit MCUs.
-      It uses the Simple Management Procotol (SMP).
+      It uses the Simple Management Protocol (SMP).
 
    Memory Watch Unit (MWU)
       A peripheral that can be used to generate events when a memory region is accessed by the CPU.
@@ -336,51 +337,49 @@ Glossary
       Any type of wireless transmission.
 
    Packet Traffic Arbitration (PTA)
-      A collaborative coexistence mechanism for collocated wireless protocols.
+      A collaborative coexistence mechanism for colocated wireless protocols.
 
    Patch
       A method to describe changes in one or more source code files.
       It does not require a repository.
-      Sometimes it is improperly used as a synonym of commit.
+      Sometimes it is improperly used as a synonym of *commit*.
 
    Power Amplifier (PA)
       A device used to increase the transmit power level of a radio signal.
 
    Power Saving Mode (PSM)
-      A feature introduced in 3GPP Release 12 to improve battery life of IoT (Internet of Things) devices by minimizing energy consumption.
+      A feature introduced in 3GPP Release 12 to improve the battery life of IoT (Internet of Things) devices by minimizing energy consumption.
       The device stays dormant during the PSM window.
 
    Printed Circuit Board (PCB)
       A board that connects electronic components.
 
    Process Stack Pointer (PSP)
-      A separate stack pointer that can be used for application threads. This is an optional configuration,
-      but it may be required if using an RTOS.
+      A separate stack pointer that can be used for application threads.
 
    Programmable Peripheral Interconnect (PPI)
-      Enables peripherals to interact autonomously with each other using tasks and events independent of
-      the CPU.
+      It enables peripherals to interact autonomously with each other using tasks and events independently of the CPU.
 
    Protocol Data Unit (PDU)
       Information transferred as a single unit between peer entities of a computer network and containing control and address information or data.
       PDU mode is one of the two ways of sending and receiving SMS messages.
 
    Provisioning
-      * In a thread mesh network, the process of associating a device to the appropriate service, and performing any application or vendor-specific configuration.
+      * In a Thread Mesh network, the process of associating a device to the appropriate service, and performing any application or vendor-specific configuration.
         It is a step in the commissioning process.
-      * In a bluetooth mesh network, the process of adding devices to the network.
+      * In a Bluetooth Mesh network, the process of adding devices to the network.
       * In a bootloader, the process of storing public key hashes in a separate region of memory from the bootloader image.
 
    Pull Request
       A set of commits that are sent to contribute to a repository.
 
    Qualified Design Identification (QDID)
-      A unique identifier assigned to a design that has completed Bluetooth Qualification.
+      A unique identifier assigned to a design that has completed the Bluetooth Qualification Process.
 
    Quality of Service (QoS)
-      | The measured overall performance of a service, such as a telephony or a computer network, or a cloud computing service.
-      | A module in the SoftDevice Controller of the same name is dedicated to provideing these signal quality measurements. The
-        application can use this data to estimate the quality of received signal.
+      * The measured overall performance of a service, such as a telephony or a computer network, or a cloud computing service.
+      * A module in the SoftDevice Controller dedicated to providing these signal quality measurements.
+        The application can use this data to estimate the quality of the received signal.
 
    Radio Co-Processor (RCP)
       A co-processor offloading radio functions from the host processor.
@@ -413,7 +412,7 @@ Glossary
       See Access Port Protection (APPROTECT).
 
    Security Manager (SM)
-      Provides means for bonding devices, encrypting and decrypting data, and enabling device privacy.
+      It provides functionalities used for bonding devices, encrypting and decrypting data, and enabling device privacy.
 
    Security Manager Protocol (SMP)
       A protocol used for pairing and key distribution.
@@ -448,8 +447,7 @@ Glossary
       A general management protocol for enabling a host device to communicate with and manage co-processors, like a network co-processor (NCP) or a radio co-processor (RCP).
 
    Supervisor Call (SVC)
-      Generates a software exception in which access to system resources or privileged operations can be
-      provided.
+      It generates a software exception in which access to system resources or privileged operations can be provided.
 
    System in Package (SiP)
       Several integrated circuits, often from different technologies, enclosed in a single module that performs as a system or subsystem.
@@ -507,7 +505,7 @@ Glossary
       A timer that causes a system reset if it is not poked periodically.
 
    West
-      A multiple repository management system used by Zephyr and the |NCS|.
+      A multiple-repositories management system used by Zephyr and the |NCS|.
       See :ref:`zephyr:west`.
 
    West manifest file
